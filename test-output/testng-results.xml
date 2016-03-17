@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="15915" started-at="2016-03-17T09:42:33Z" finished-at="2016-03-17T09:42:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="15915" started-at="2016-03-17T09:42:33Z" finished-at="2016-03-17T09:42:49Z">
+      <class name="com.m3u8.test.TestBase">
+        <test-method status="PASS" signature="testExtinfDataType()[pri:0, instance:com.m3u8.test.TestBase@64c64813]" name="testExtinfDataType" duration-ms="15898" started-at="2016-03-17T17:42:33Z" finished-at="2016-03-17T17:42:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExtinfDataType -->
+      </class> <!-- com.m3u8.test.TestBase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
