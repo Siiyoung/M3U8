@@ -12,6 +12,9 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>  
+        <!-- 编译时的编码 -->  
+    <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
   </properties>
 
   <dependencies>
@@ -26,6 +29,24 @@
     	<artifactId>testng</artifactId>
     	<version>6.9.9</version>
     </dependency>
+    <dependency>
+    	<groupId>log4j</groupId>
+    	<artifactId>log4j</artifactId>
+    	<version>1.2.17</version>
+    </dependency>
+    <dependency>  
+    <groupId>javax.servlet</groupId>  
+    <artifactId>servlet-api</artifactId>  
+        <version>1.1.1</version>  
+        <scope>system</scope>  
+        <!--本地jar的路径,相对或者绝对都可以-->  
+        <systemPath>${basedir}/libs/arrow-0.1.0.jar</systemPath>  
+</dependency>
+    <dependency>
+    	<groupId>httpunit</groupId>
+    	<artifactId>httpunit</artifactId>
+    	<version>1.7</version>
+    </dependency>
   </dependencies>
   <build>
   	<plugins>
@@ -38,14 +59,15 @@
   			<target>1.7</target>
   			</configuration>
   		</plugin>
-  		<plugin>
+  		<plugin>      
   			<groupId>org.apache.maven.plugins</groupId>
   			<artifactId>maven-surefire-plugin</artifactId>
-  			<version>2.12</version>
-  			<inherited>true</inherited>
+  			<version>2.19.1</version>
+  			  <inherited>true</inherited>		
   			  <configuration>
+  			  <skipTests>false</skipTests>
   			  <suiteXmlFiles>
-  			  <suiteXmlFile>testng.xml</suiteXmlFile>
+  			  <suiteXmlFile>testNG.xml</suiteXmlFile>
   			  </suiteXmlFiles>
   			  </configuration>
   		</plugin>

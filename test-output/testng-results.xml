@@ -1,16 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="9" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15915" started-at="2016-03-17T09:42:33Z" finished-at="2016-03-17T09:42:49Z">
+  <suite name="Default suite" duration-ms="628" started-at="2016-03-25T08:28:06Z" finished-at="2016-03-25T08:28:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15915" started-at="2016-03-17T09:42:33Z" finished-at="2016-03-17T09:42:49Z">
+    <test name="Default test" duration-ms="628" started-at="2016-03-25T08:28:06Z" finished-at="2016-03-25T08:28:06Z">
       <class name="com.m3u8.test.TestBase">
-        <test-method status="PASS" signature="testExtinfDataType()[pri:0, instance:com.m3u8.test.TestBase@64c64813]" name="testExtinfDataType" duration-ms="15898" started-at="2016-03-17T17:42:33Z" finished-at="2016-03-17T17:42:49Z">
+        <test-method status="FAIL" signature="testCompareM3uPs()[pri:0, instance:com.m3u8.test.TestBase@326de728]" name="testCompareM3uPs" duration-ms="257" started-at="2016-03-25T16:28:06Z" finished-at="2016-03-25T16:28:06Z">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[m3u8和ps分片数不等,m3u8分片数为9ps分片数为12]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: m3u8和ps分片数不等,m3u8分片数为9ps分片数为12
+	at com.m3u8.basetool.GetTsSegNoRank.CompareM3uPs(GetTsSegNoRank.java:55)
+	at com.m3u8.test.TestBase.testCompareM3uPs(TestBase.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompareM3uPs -->
+        <test-method status="PASS" signature="testCompareTime()[pri:0, instance:com.m3u8.test.TestBase@326de728]" name="testCompareTime" duration-ms="37" started-at="2016-03-25T16:28:06Z" finished-at="2016-03-25T16:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompareTime -->
+        <test-method status="PASS" signature="testExtinfDataType()[pri:0, instance:com.m3u8.test.TestBase@326de728]" name="testExtinfDataType" duration-ms="2" started-at="2016-03-25T16:28:06Z" finished-at="2016-03-25T16:28:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testExtinfDataType -->
+        <test-method status="PASS" signature="testFragmentMaxTime()[pri:0, instance:com.m3u8.test.TestBase@326de728]" name="testFragmentMaxTime" duration-ms="125" started-at="2016-03-25T16:28:06Z" finished-at="2016-03-25T16:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFragmentMaxTime -->
+        <test-method status="PASS" signature="testResponse()[pri:0, instance:com.m3u8.test.TestBase@326de728]" name="testResponse" duration-ms="51" started-at="2016-03-25T16:28:06Z" finished-at="2016-03-25T16:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponse -->
+        <test-method status="PASS" signature="testSeg_noRank()[pri:0, instance:com.m3u8.test.TestBase@326de728]" name="testSeg_noRank" duration-ms="33" started-at="2016-03-25T16:28:06Z" finished-at="2016-03-25T16:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSeg_noRank -->
+        <test-method status="PASS" signature="testSeg_noRepeat()[pri:0, instance:com.m3u8.test.TestBase@326de728]" name="testSeg_noRepeat" duration-ms="25" started-at="2016-03-25T16:28:06Z" finished-at="2016-03-25T16:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSeg_noRepeat -->
+        <test-method status="PASS" signature="testUnusualUrlResponse()[pri:0, instance:com.m3u8.test.TestBase@326de728]" name="testUnusualUrlResponse" duration-ms="33" started-at="2016-03-25T16:28:06Z" finished-at="2016-03-25T16:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUnusualUrlResponse -->
+        <test-method status="PASS" signature="testisOnlyValue()[pri:0, instance:com.m3u8.test.TestBase@326de728]" name="testisOnlyValue" duration-ms="24" started-at="2016-03-25T16:28:06Z" finished-at="2016-03-25T16:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testisOnlyValue -->
       </class> <!-- com.m3u8.test.TestBase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
